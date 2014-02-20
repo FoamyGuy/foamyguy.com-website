@@ -1,0 +1,37 @@
+.item header{
+    background-color:#DDDDDD;
+}
+
+
+.center_icon{
+    font-size:2em;
+}
+
+#icon_play{
+    color:#A4C739;
+    
+}
+#icon_play:hover{
+    color: #AAA;
+}
+
+#icon_stackoverflow{
+    color:#fe7a15;
+}
+#icon_stackoverflow:hover{
+    color: #AAA;
+}
+
+#icon_youtube{
+    color:#cc181e;
+}
+#icon_youtube:hover{
+    color: #AAA;
+}
+
+#icon_github{
+    color:#000;
+}
+#icon_github:hover{
+    color: #AAA;
+}1
