@@ -12,7 +12,7 @@
 
 		// skelJS (probably don't need to change anything here unless you know what you're doing)
 			skelJS: {
-				prefix: 'css/style',
+				prefix: 'static/css/style',
 				resetCSS: true,
 				boxModel: 'border',
 				useOrientation: true,
