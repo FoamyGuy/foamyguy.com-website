@@ -1,265 +1,290 @@
 <!DOCTYPE HTML>
 <!--
-	Prologue 1.2 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+        Prologue 1.2 by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Prologue by HTML5 UP</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
+        <head>
+                <title>Foamyguy.com</title>
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <meta name="description" content="" />
+                <meta name="keywords" content="" />
+                <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+                <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+                <script src="js/jquery.min.js"></script>
+                <script src="js/skel.min.js"></script>
+                <script src="js/skel-panels.min.js"></script>
+                <script src="js/init.js"></script>
+                <noscript>
+                <link rel="stylesheet" href="css/skel-noscript.css" />
+                <link rel="stylesheet" href="css/style.css" />
+                <link rel="stylesheet" href="css/style-wide.css" />
+                </noscript>
+                
 
-		</noscript>
         <link rel="stylesheet" href="css/theme.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+                <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+                <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+                <script>
+                function submit(){
+                 var values = jQuery('#myForm').serialize();
+                 console.log("posting");
+                 jQuery.ajax({
+                        type: "POST",
+                        url: "https://docs.google.com/forms/d/1pAKbi8p9xtn4xR6IHxDmjQn5LieDlK-4yTZnxGE3OkQ/formResponse",
+                        data: values,
+                        crossDomain : true,
+                        complete: function(data, textStatus) {
+                        //console.log(textStatus);
+                        window.location = "/";
+                        }
+                });
+        }
+    </script>
+        </head>
+        <body>
 
-		<!-- Header -->
-			<div id="header" class="skel-panels-fixed">
+                <!-- Header -->
+                        <div id="header" class="skel-panels-fixed">
 
-				<div class="top">
+                                <div class="top">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
-							<h1 id="title">Tim Cocks</h1>
-							<span class="byline">Software Developer</span>
+                                        <!-- Logo -->
+                                                <div id="logo">
+                                                        <span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
+                                                        <h1 id="title">Tim Cocks</h1>
+                                                        <span class="byline">Software Developer</span>
 
                             <span class="byline">specializing in Android</span>
                             <br />
 
-						</div>
+                                                </div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+                                        <!-- Nav -->
+                                                <nav id="nav">
+                                                        <!--
 
-								Prologue's nav expects links in one of two formats:
+                                                                Prologue's nav expects links in one of two formats:
 
-								1. Hash link (scrolls to a different section within the page)
+                                                                1. Hash link (scrolls to a different section within the page)
 
-								   <li><a href="#foobar" id="foobar-link" class="skel-panels-ignoreHref"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
+                                                                   <li><a href="#foobar" id="foobar-link" class="skel-panels-ignoreHref"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
 
-								2. Standard link (sends the user to another page/site)
+                                                                2. Standard link (sends the user to another page/site)
 
-								   <li><a href="http://foobar.tld"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
+                                                                   <li><a href="http://foobar.tld"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+                                                        -->
+                                                        <ul>
+                                                                <li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Intro</span></a></li>
+                                                                <li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
+                                                                <li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Me</span></a></li>
+                                                                <li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
+                                                        </ul>
+                                                </nav>
 
-				</div>
+                                </div>
 
-				<div class="bottom">
+                                <div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="http://www.youtube.com/user/Zobrombee/videos" class="fa fa-youtube solo"><span>Youtube</span></a></li>
-				            <li><a href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="fa fa-android"><span></span></a></li>
+                                        <!-- Social Icons -->
+                                                <ul class="icons">
+                                                    <li><a href="http://stackoverflow.com/users/507810/foamyguy" class="fa fa-stack-overflow solo"><span>Youtube</span></a></li>
+                                            <li><a href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="fa fa-android"><span></span></a></li>
+                                                        <li><a href="http://github.com/foamyguy" class="fa fa-github solo"><span>Github</span></a></li>
+                                                        <li><a href="http://www.youtube.com/user/Zobrombee/videos" class="fa fa-youtube solo"><span>Youtube</span></a></li>
 
-							<li><a href="http://github.com/foamyguy" class="fa fa-github solo"><span>Github</span></a></li>
-                            <li><a href="http://stackoverflow.com/users/507810/foamyguy" class="fa fa-stack-overflow solo"><span>Youtube</span></a></li>
-							<!--<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>-->
-							<li><a href="#" class="fa fa-envelope solo"><span>Email</span></a></li>
-						</ul>
+                                                        <!--<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>-->
+                                                        <!--<li><a href="#" class="fa fa-envelope solo"><span>Email</span></a></li>-->
+                                                </ul>
 
-				</div>
+                                </div>
 
-			</div>
+                        </div>
 
-		<!-- Main -->
-			<div id="main">
+                <!-- Main -->
+                        <div id="main">
 
-				<!-- Intro -->
-					<section id="top" class="one">
-						<div class="container">
+                                <!-- Intro -->
+                                        <section id="top" class="one">
+                                                <div class="container">
 
-							<a href="http://ineedchemicalx.deviantart.com/art/Moonscape-381829905" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                                                        <a href="#" class="image featured"><img src="images/top_image_compressed.jpg" alt="" /></a>
 
-							<header>
-								<h2 class="alt">I like to solve problems using technology and computers</h2>
-							</header>
+                                                        <header>
+                                                                <h2 class="alt">I like to solve problems using technology and computers</h2>
+                                                        </header>
 
-							<p>I greatly enjoy both learning and helping others to learn.</p>
+                                                        <p>I greatly enjoy both learning and helping others to learn</p>
 
-							<footer>
-								<!--<a href="#portfolio" class="button scrolly">Magna Aliquam</a>-->
+                                                        <footer>
+                                                                <!--<a href="#portfolio" class="button scrolly">Magna Aliquam</a>-->
                                 <ul class="icons">
-                                    <li><a id="icon_youtube" href="http://www.youtube.com/user/Zobrombee/videos" class="fa fa-youtube solo center_icon"><span>Youtube</span></a></li>
+                                    <li><a id="icon_stackoverflow" href="http://stackoverflow.com/users/507810/foamyguy" class="fa fa-stack-overflow solo center_icon"><span>Youtube</span></a></li>
                                     <li><a id="icon_play" href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="fa fa-android center_icon"><span></span></a></li>
                                     <li><a id="icon_github" href="http://github.com/foamyguy" class="fa fa-github solo center_icon"><span>Github</span></a></li>
-                                    <li><a id="icon_stackoverflow" href="http://stackoverflow.com/users/507810/foamyguy" class="fa fa-stack-overflow solo center_icon"><span>Youtube</span></a></li>
+                                    <li><a id="icon_youtube" href="http://www.youtube.com/user/Zobrombee/videos" class="fa fa-youtube solo center_icon"><span>Youtube</span></a></li>
 
 
                                 </ul>
-							</footer>
+                                                        </footer>
 
-						</div>
-					</section>
+                                                </div>
+                                        </section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+                                <!-- Portfolio -->
+                                        <section id="portfolio" class="two">
+                                                <div class="container">
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
+                                                        <header>
+                                                                <h2>Portfolio</h2>
+                                                        </header>
 
-							<p>Lately most of my work has been geared toward using various technologies
+                                                        <p>Lately most of my work has been geared toward using various technologies
                             to create digitial signage solutions. Some of my creations are being utilized
-                            in retail shops. Others in office buildings. I have been working on Android
-                            since very shortly after the first public device was launched.  </p>
+                            across the US and Canada in retail stores. Others in office buildings.
+                            I have also developed and deployed several Android applications for myself and others.
+                            </p>
 
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.youtube.com/user/Zobrombee/videos" class="image full"><img src="images/youtube-videos.png" alt="" /></a>
-										<header class="darker">
-											<h3>Programming tutorial videos</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image full"><img src="images/room-signage.png" alt="" /></a>
-										<header class="darker">
-											<h3>Conference room signage</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image full"><img src="images/tablet-math.png" alt="" /></a>
-										<header class="darker">
-											<h3>Tablet math game</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image full"><img src="images/odd.png" alt="" /></a>
-										<header class="darker">
-											<h3>Mobile demo player</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u" >
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Elysium-355393900" class="image full"><img src="images/transfer-guides.png" alt="" /></a>
-										<header class="darker">
-											<h3>College transfer guide search utility</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full"><img src="images/oss.png" alt="" /></a>
-										<header class="darker">
-											<h3>Open source contributions</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+                                                        <div class="row">
+                                                                <div class="4u">
 
-						</div>
-					</section>
+                                                                        <article class="item">
+                                                                        <a href="http://www.youtube.com/user/Zobrombee/videos" class="image full">
+                                                                        <div>
+                                                                                <img src="images/youtube-videos.png" alt="" />
+                                                                                <header class="darker">
+                                                                                        <h3>Programming tutorial videos</h3>
+                                                                                </header>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+                                                                        </div>
+                                                                        </a>
+                                                                        </article>
+                                                                        <article class="item">
+                                                                            <a href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="image full">
+                                                                            <div>
+                                                                                <img src="images/play_store.png" alt="" />
+                                                                                <header class="darker">
+                                                                                        <h3>Published Android Apps</h3>
+                                                                                </header>
+                                                                            </div>
+                                                                            </a>
+                                                                        </article>
+                                                                        
+                                                                </div>
+                                                                <div class="4u">
+                                                                        
+                                                                        <article class="item">
+                                                                        <a href="http://github.com/foamyguy" class="image full">
+                                                                        <div>
+                                                                                <img src="images/oss.png" alt="" />
+                                                                                <header class="darker">
+                                                                                        <h3>Open source contributions</h3>
+                                                                                </header>
+                                                                        </div>
+                                                                        </a>
+                                                                        </article>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+                                                                        <article class="item">
+                                                                                <a href="http://cti-kc.com" class="image full"><img src="images/odd.png" alt="" /></a>
+                                                                                <header class="darker">
+                                                                                        <h3>Mobile demo player</h3>
+                                                                                </header>
+                                                                        </article>
+                                                                </div>
+                                                                <div class="4u" >
+                                                                        <article class="item">
+                                                                                <a href="http://coderdojokc.com/" class="image full"><img src="images/coder_dojo.png" alt="" /></a>
+                                                                                <header class="darker">
+                                                                                        <h3>Mentor at CoderDojo KC</h3>
+                                                                                </header>
+                                                                        </article>
+                                                                        <article class="item">
+                                                                                <a href="http://cti-kc.com" class="image full"><img src="images/room-signage.png" alt="" /></a>
+                                                                                <header class="darker">
+                                                                                        <h3>Conference room signage</h3>
+                                                                                </header>
+                                                                        </article>
+                                                                        
+                                                                </div>
+                                                        </div>
 
-							<a href="#" class="image featured"><img src="images/lego_small.png" alt="" /></a>
+                                                </div>
+                                        </section>
 
-							<p>I was lucky enough to be able to learn Java in highschool.
+                                <!-- About Me -->
+                                        <section id="about" class="three">
+                                                <div class="container">
+
+                                                        <header>
+                                                                <h2>About Me</h2>
+                                                        </header>
+
+                                                        <a href="#" class="image featured"><img src="images/lego_small.png" alt="" /></a>
+
+                                                        <p>I was lucky enough to be able to learn Java in highschool.
                             Within a few years of graduating Android had been released and
                             gave me a platform to use the knowledge that I had acquired. I
                             got the first Android phone shortly after its release, and began
                             writing programs for it. Much of my earliest Android work revolved
                             around barcodes in some form. I &lt;3 Python</p>
 
-						</div>
-					</section>
+                                                </div>
+                                        </section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+                                <!-- Contact -->
+                                        <section id="contact" class="four">
+                                                <div class="container">
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+                                                        <header>
+                                                                <h2>Contact</h2>
+                                                        </header>
 
-<!--							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>-->
+                                                            <p>Would you like to know more about any of my projects?
+                                                               Do you know of something awesome, that you think I'd like?
+                                                               Are you looking for a developer to help bring your idea to life?
+                                                               Please get in touch.
+                                                            </p>
 
-							<form id="myForm">
-								<div class="row half">
-									<div class="6u"><input type="text" class="text" name="entry.876762322" placeholder="Name" /></div>
-									<div class="6u"><input type="text" class="text" name="entry.1759585177" placeholder="Email" /></div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="entry.195645307" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<a href="#" onclick="submit();" class="button submit">Send Message</a>
-									</div>
-								</div>
-							</form>
 
-						</div>
-					</section>
 
-			</div>
+                                                        <form id="myForm">
+                                                                <div class="row half">
+                                                                        <div class="6u"><input type="text" class="text" name="entry.876762322" placeholder="Name" /></div>
+                                                                        <div class="6u"><input type="text" class="text" name="entry.1759585177" placeholder="Email" /></div>
+                                                                </div>
+                                                                <div class="row half">
+                                                                        <div class="12u">
+                                                                                <textarea name="entry.195645307" placeholder="Message"></textarea>
+                                                                        </div>
+                                                                </div>
 
-		<!-- Footer -->
-			<div id="footer">
+                                                        </form>
+                                                        <br />
+                                                        <div class="row">
+                                                        <div class="12u">
+                                                                <a type="button" onclick="submit();" class="button submit">Send Message</a>
+                                                        </div>
+                                                </div>
 
-				<!-- Copyright -->
-					<div class="copyright">
-						<p>&copy; 2013 Jane Doe. All rights reserved.</p>
-						<ul class="menu">
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							<li>Images: <a href="http://ineedchemicalx.deviantart.com">Felicia Simion</a></li>
-						</ul>
-					</div>
+                                                </div>
+                                        </section>
 
-			</div>
+                        </div>
 
-function submit(){
-		var values = $('#myForm').serialize();
-		//console.log("posting");
-		$.ajax({
-			type: "POST",
-			url: "https://docs.google.com/forms/d/14KklEry8UIoie-F7K8pXgBOKj2UxBQHBDLKKCk76S_0/formResponse",
-			data: values,
-			crossDomain : true,
-			complete: function(data, textStatus) {
-			//console.log(textStatus);
-			window.location = "index.html";
-			}
-		});
-}
-</script>
-	</body>
+                <!-- Footer -->
+                        <div id="footer">
+
+                                <!-- Copyright -->
+                                        <div class="copyright">
+                                                <p>&copy; 2014 Foamyguy. Be nice to people.</p>
+                                                <ul class="menu">
+                                                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                                </ul>
+                                        </div>
+
+                        </div>
+
+        </body>
 </html>
