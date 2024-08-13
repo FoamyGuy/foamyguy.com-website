@@ -40,6 +40,9 @@
                         complete: function(data, textStatus) {
                         //console.log(textStatus);
                         window.location = "https://foamyguy.github.io/foamyguy.com-website/";
+                        },
+                        error: function(){
+                            window.location.reload();
                         }
                 });
         }
