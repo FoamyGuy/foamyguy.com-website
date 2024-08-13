@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<!--
+        Prologue 1.2 by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+        <head>
+                <title>Foamyguy.com</title>
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <meta name="description" content="" />
+                <meta name="keywords" content="" />
+                <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+                <!--[if lte IE 8]><script src="static/js/html5shiv.js"></script><![endif]-->
+                <script src="static/js/jquery.min.js"></script>
+                <script src="static/js/skel.min.js"></script>
+                <script src="static/js/skel-panels.min.js"></script>
+                <script src="static/js/init.js"></script>
+                <noscript>
+                <link rel="stylesheet" href="static/css/skel-noscript.css" />
+                <link rel="stylesheet" href="static/css/style.css" />
+                <link rel="stylesheet" href="static/css/style-wide.css" />
+                </noscript>
+                
+
+        <link rel="stylesheet" href="static/css/theme.css" />
+                <!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
+                <!--[if lte IE 8]><link rel="stylesheet" href="static/css/ie8.css" /><![endif]-->
+                <script>
+                function submit(){
+                 var values = jQuery('#myForm').serialize();
+                 console.log("posting");
+                 jQuery.ajax({
+                        type: "POST",
+                        url: "https://docs.google.com/forms/d/1pAKbi8p9xtn4xR6IHxDmjQn5LieDlK-4yTZnxGE3OkQ/formResponse",
+                        data: values,
+                        crossDomain : true,
+                        complete: function(data, textStatus) {
+                        //console.log(textStatus);
+                        window.location = "/";
+                        }
+                });
+        }
+    </script>
+        </head>
+        <body>
+
+                <!-- Header -->
+                        <div id="header" class="skel-panels-fixed">
+
+                                <div class="top">
+
+                                        <!-- Logo -->
+                                                <div id="logo">
+                                                        <span class="image avatar48"><img src="static/images/avatar.png" alt="" /></span>
+                                                        <h1 id="title">Tim Cocks</h1>
+                                                        <span class="byline">Software Developer</span>
+
+                            <span class="byline">specializing in Android</span>
+                            <br />
+
+                                                </div>
+
+                                        <!-- Nav -->
+                                                <nav id="nav">
+                                                        <!--
+
+                                                                Prologue's nav expects links in one of two formats:
+
+                                                                1. Hash link (scrolls to a different section within the page)
+
+                                                                   <li><a href="#foobar" id="foobar-link" class="skel-panels-ignoreHref"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
+
+                                                                2. Standard link (sends the user to another page/site)
+
+                                                                   <li><a href="http://foobar.tld"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
+
+                                                        -->
+                                                        <ul>
+                                                                <li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Intro</span></a></li>
+                                                                <li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
+                                                                <li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Me</span></a></li>
+                                                                <li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
+                                                        </ul>
+                                                </nav>
+
+                                </div>
+
+                                <div class="bottom">
+
+                                        <!-- Social Icons -->
+                                                <ul class="icons">
+                                                    <li><a href="http://stackoverflow.com/users/507810/foamyguy" class="fa fa-stack-overflow solo"><span>Youtube</span></a></li>
+                                            <li><a href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="fa fa-android"><span></span></a></li>
+                                                        <li><a href="http://github.com/foamyguy" class="fa fa-github solo"><span>Github</span></a></li>
+                                                        <li><a href="http://www.youtube.com/user/Zobrombee/videos" class="fa fa-youtube solo"><span>Youtube</span></a></li>
+
+                                                        <!--<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>-->
+                                                        <!--<li><a href="#" class="fa fa-envelope solo"><span>Email</span></a></li>-->
+                                                </ul>
+
+                                </div>
+
+                        </div>
+
+                <!-- Main -->
+                        <div id="main">
+
+                                <!-- Intro -->
+                                        <section id="top" class="one">
+                                                <div class="container">
+
+                                                        <a href="#" class="image featured"><img src="static/images/top_image_compressed.jpg" alt="" /></a>
+
+                                                        <header>
+                                                                <h2 class="alt">I like to solve problems using technology and computers</h2>
+                                                        </header>
+
+                                                        <p>I enjoy learning and helping others to learn</p>
+
+                                                        <footer>
+                                                                <!--<a href="#portfolio" class="button scrolly">Magna Aliquam</a>-->
+                                <ul class="icons">
+                                    <li><a id="icon_stackoverflow" href="http://stackoverflow.com/users/507810/foamyguy" class="fa fa-stack-overflow solo center_icon"><span>Youtube</span></a></li>
+                                    <li><a id="icon_play" href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="fa fa-android center_icon"><span></span></a></li>
+                                    <li><a id="icon_github" href="http://github.com/foamyguy" class="fa fa-github solo center_icon"><span>Github</span></a></li>
+                                    <li><a id="icon_youtube" href="http://www.youtube.com/user/Zobrombee/videos" class="fa fa-youtube solo center_icon"><span>Youtube</span></a></li>
+
+
+                                </ul>
+                                                        </footer>
+
+                                                </div>
+                                        </section>
+
+                                <!-- Portfolio -->
+                                        <section id="portfolio" class="two">
+                                                <div class="container">
+
+                                                        <header>
+                                                                <h2>Portfolio</h2>
+                                                        </header>
+
+                                                        <p>Lately most of my work has been geared toward using various technologies
+                            to create digitial signage solutions. Some of my creations are being utilized
+                            across the world in retail stores. Others in office buildings and schools.
+                            You can find some of my creations below.
+                            </p>
+
+                                                        <div class="row">
+                                                                <div class="4u">
+
+                                                                        <article class="item">
+                                                                        <a href="http://adafru.it/discord" class="image full">
+                                                                        <div>
+                                                                                <img src="static/images/circuitpython_helper_discord.png" alt="" />
+                                                                                <header class="darker">
+                                                                                        <h3>CircuitPython Helper</h3>
+                                                                                </header>
+
+                                                                        </div>
+                                                                        </a>
+                                                                        </article>
+                                                                        <article class="item">
+                                                                            <a href="https://play.google.com/store/apps/developer?id=Foamy+Guy" class="image full">
+                                                                            <div>
+                                                                                <img src="static/images/play_store.png" alt="" />
+                                                                                <header class="darker">
+                                                                                        <h3>Published Android Apps</h3>
+                                                                                </header>
+                                                                            </div>
+                                                                            </a>
+                                                                        </article>
+                                                                        
+                                                                </div>
+                                                                <div class="4u">
+                                                                        
+                                                                        <article class="item">
+                                                                        <a href="http://github.com/foamyguy" class="image full">
+                                                                        <div>
+                                                                                <img src="static/images/oss.png" alt="" />
+                                                                                <header class="darker">
+                                                                                        <h3>Open source contributions</h3>
+                                                                                </header>
+                                                                        </div>
+                                                                        </a>
+                                                                        </article>
+
+                                                                        <article class="item">
+                                                                                <a href="https://play.google.com/store/apps/details?id=com.adafruit.bluefruit_playground" class="image full"><img src="static/images/bluefruit_playground.jpg" alt="" /></a>
+                                                                                <header class="darker">
+                                                                                        <h3>Android Bluefruit Playground</h3>
+                                                                                </header>
+                                                                        </article>
+                                                                </div>
+                                                                <div class="4u" >
+                                                                        <article class="item">
+                                                                                <a href="http://hackaday.io/foamyguy" class="image full"><img src="static/images/hackaday_io.png" alt="" /></a>
+                                                                                <header class="darker">
+                                                                                        <h3>Hackaday.io Projects</h3>
+                                                                                </header>
+                                                                        </article>
+                                                                        <article class="item">
+                                                                                <a href="http://cti-kc.com" class="image full"><img src="static/images/signage.png" alt="" /></a>
+                                                                                <header class="darker">
+                                                                                        <h3>Digital Signage</h3>
+                                                                                </header>
+                                                                        </article>
+                                                                        
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </section>
+
+                                <!-- About Me -->
+                                        <section id="about" class="three">
+                                                <div class="container">
+
+                                                        <header>
+                                                                <h2>About Me</h2>
+                                                        </header>
+
+                                                        
+
+                                                        <p>I was lucky enough to be able to learn Java in highschool.
+                            Within a few years of graduating Android had been released and
+                            gave me a platform to use the knowledge that I had acquired. I
+                            got the first Android phone shortly after its release, and began
+                            writing programs for it. Much of my earliest Android work revolved
+                            around barcodes in some form. I &lt;3 Python</p>
+
+                                                </div>
+                                        </section>
+
+                                <!-- Contact -->
+                                        <section id="contact" class="four">
+                                                <div class="container">
+
+                                                        <header>
+                                                                <h2>Contact</h2>
+                                                        </header>
+
+                                                            <p>Would you like to know more about any of my projects?
+                                                               Do you know of something awesome, that you think I'd like?
+                                                               Are you looking for a developer to help bring your idea to life?
+                                                               Please get in touch.
+                                                            </p>
+
+
+
+                                                        <form id="myForm">
+                                                                <div class="row half">
+                                                                        <div class="6u"><input type="text" class="text" name="entry.876762322" placeholder="Name" /></div>
+                                                                        <div class="6u"><input type="text" class="text" name="entry.1759585177" placeholder="Email" /></div>
+                                                                </div>
+                                                                <div class="row half">
+                                                                        <div class="12u">
+                                                                                <textarea name="entry.195645307" placeholder="Message"></textarea>
+                                                                        </div>
+                                                                </div>
+
+                                                        </form>
+                                                        <br />
+                                                        <div class="row">
+                                                        <div class="12u">
+                                                                <a type="button" onclick="submit();" class="button submit">Send Message</a>
+                                                        </div>
+                                                </div>
+
+                                                </div>
+                                        </section>
+
+                        </div>
+
+                <!-- Footer -->
+                        <div id="footer">
+
+                                <!-- Copyright -->
+                                        <div class="copyright">
+                                                <p>&copy; 2020 Foamyguy. Be nice to people.</p>
+                                                <ul class="menu">
+                                                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                                </ul>
+                                        </div>
+
+                        </div>
+
+        </body>
+</html>
