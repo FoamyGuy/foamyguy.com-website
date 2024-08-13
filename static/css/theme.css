@@ -7,8 +7,12 @@
     font-size:2em;
 }
 
+.nav-link span i{
+    padding-left: 2.25em;
+}
+
 #icon_play{
-    color:#A4C739;
+    color:#9400FF;
     
 }
 #icon_play:hover{
@@ -34,4 +38,4 @@
 }
 #icon_github:hover{
     color: #AAA;
-}1
+}
