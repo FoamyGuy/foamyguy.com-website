@@ -33,6 +33,13 @@
     color: #AAA;
 }
 
+#icon_linkedin{
+    color:#0072b1;
+}
+#icon_linkedin:hover{
+    color: #AAA;
+}
+
 #icon_github{
     color:#000;
 }
